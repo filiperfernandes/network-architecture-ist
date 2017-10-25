@@ -1,0 +1,47 @@
+Dec 09 18:53:27.125 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Dec 09 18:53:27.125 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57518.
+Dec 09 18:53:27.269 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 18:53:27.294 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Filipe/GNS3/projects/ProjARP2-final/project-files/dynamips 
+Dec 09 18:53:27.294 GENERAL: working_dir=/Users/Filipe/GNS3/projects/ProjARP2-final/project-files/dynamips
+Dec 09 18:53:27.315 HYPERVISOR: exec_cmd: vm create R8 14 c3725 
+Dec 09 18:53:27.315 VM: VM R8 created.
+Dec 09 18:53:27.333 HYPERVISOR: exec_cmd: vm set_con_tcp_port R8 5021 
+Dec 09 18:53:27.365 HYPERVISOR: exec_cmd: c3725 get_mac_addr R8 
+Dec 09 18:53:27.378 HYPERVISOR: exec_cmd: c3725 set_mac_addr R8 c20e.220f.0000 
+Dec 09 18:53:27.388 HYPERVISOR: exec_cmd: vm set_ios R8 /Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 18:53:27.397 HYPERVISOR: exec_cmd: vm get_status R8 
+Dec 09 18:53:27.407 HYPERVISOR: exec_cmd: vm set_idle_pc R8 0x60a69954 
+Dec 09 18:53:27.437 HYPERVISOR: exec_cmd: vm set_disk0 R8 0 
+Dec 09 18:53:27.462 HYPERVISOR: exec_cmd: vm set_nvram R8 256 
+Dec 09 18:53:27.507 HYPERVISOR: exec_cmd: vm set_config R8 configs/i14_startup-config.cfg 
+Dec 09 18:53:27.880 HYPERVISOR: exec_cmd: nio create_gen_eth generic_ethernet-f08cd8e3-25f2-4aae-b980-ba6ec9889d12 en6 
+Dec 09 18:53:27.890 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 0 1 generic_ethernet-f08cd8e3-25f2-4aae-b980-ba6ec9889d12 
+Dec 09 18:53:27.938 HYPERVISOR: exec_cmd: vm get_status R8 
+Dec 09 18:53:29.010 HYPERVISOR: exec_cmd: nio create_udp udp-ad9af27c-0f3d-478d-8c0b-4a2e928e0454 10045 127.0.0.1 10044 
+Dec 09 18:53:29.030 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 0 0 udp-ad9af27c-0f3d-478d-8c0b-4a2e928e0454 
+Dec 09 18:53:29.055 HYPERVISOR: exec_cmd: vm get_status R8 
+Dec 09 19:12:07.017 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:17:12.560 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:23:41.553 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:23:45.036 HYPERVISOR: exec_cmd: vm set_ghost_status R8 2 
+Dec 09 19:23:45.038 HYPERVISOR: exec_cmd: vm set_ghost_file R8 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 09 19:23:45.039 HYPERVISOR: exec_cmd: vm get_status R8 
+Dec 09 19:23:45.041 HYPERVISOR: exec_cmd: vm start R8 
+Dec 09 19:36:49.220 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:44:50.469 HYPERVISOR: exec_cmd: nio bind_filter generic_ethernet-f08cd8e3-25f2-4aae-b980-ba6ec9889d12 2 capture 
+Dec 09 19:44:50.471 HYPERVISOR: exec_cmd: nio setup_filter generic_ethernet-f08cd8e3-25f2-4aae-b980-ba6ec9889d12 2 en10mb /Users/Filipe/GNS3/projects/ProjARP2-final/project-files/captures/R8_FastEthernet0-1_to_Raspberry_nio_gen_ethen6.pcap 
+Dec 09 19:49:48.560 HYPERVISOR: exec_cmd: vm get_status R8 
+Dec 09 19:49:48.578 HYPERVISOR: exec_cmd: vm stop R8 
+Dec 09 19:49:48.686 VM: VM R8 shutdown.
+Dec 09 19:49:48.729 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:49:53.083 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:50:07.934 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:53:54.403 HYPERVISOR: exec_cmd: nio unbind_filter generic_ethernet-f08cd8e3-25f2-4aae-b980-ba6ec9889d12 2 
+Dec 09 19:54:03.982 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:54:26.712 HYPERVISOR: exec_cmd: vm get_status R8 
+Dec 09 19:54:26.738 HYPERVISOR: exec_cmd: vm extract_config R8 
+Dec 09 19:54:26.779 HYPERVISOR: exec_cmd: vm delete R8 
+Dec 09 19:54:26.779 VM: VM R8 destroyed.
+Dec 09 19:54:26.827 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 19:54:27.042 HYPERVISOR: Stopped.
+Dec 09 19:54:27.043 GENERAL: reset done.

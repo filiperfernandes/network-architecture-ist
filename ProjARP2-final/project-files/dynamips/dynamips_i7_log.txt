@@ -1,0 +1,54 @@
+Dec 09 18:53:26.442 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Dec 09 18:53:26.443 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57502.
+Dec 09 18:53:26.549 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 18:53:26.563 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Filipe/GNS3/projects/ProjARP2-final/project-files/dynamips 
+Dec 09 18:53:26.563 GENERAL: working_dir=/Users/Filipe/GNS3/projects/ProjARP2-final/project-files/dynamips
+Dec 09 18:53:26.568 HYPERVISOR: exec_cmd: vm create SwR7 7 c3725 
+Dec 09 18:53:26.568 VM: VM SwR7 created.
+Dec 09 18:53:26.587 HYPERVISOR: exec_cmd: vm set_con_tcp_port SwR7 5006 
+Dec 09 18:53:26.624 HYPERVISOR: exec_cmd: c3725 get_mac_addr SwR7 
+Dec 09 18:53:26.672 HYPERVISOR: exec_cmd: c3725 set_mac_addr SwR7 c207.0f5d.0000 
+Dec 09 18:53:26.682 HYPERVISOR: exec_cmd: vm set_ios SwR7 /Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 18:53:26.693 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 18:53:26.704 HYPERVISOR: exec_cmd: vm set_idle_pc SwR7 0x60a69954 
+Dec 09 18:53:26.710 HYPERVISOR: exec_cmd: vm set_disk0 SwR7 1 
+Dec 09 18:53:26.729 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 18:53:26.749 HYPERVISOR: exec_cmd: vm slot_add_binding SwR7 1 0 NM-16ESW 
+Dec 09 18:53:26.755 HYPERVISOR: exec_cmd: vm set_nvram SwR7 256 
+Dec 09 18:53:26.761 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 18:53:26.773 HYPERVISOR: exec_cmd: vm slot_add_binding SwR7 2 0 NM-4T 
+Dec 09 18:53:26.781 HYPERVISOR: exec_cmd: vm set_config SwR7 configs/i7_startup-config.cfg 
+Dec 09 18:53:28.165 HYPERVISOR: exec_cmd: nio create_udp udp-7c0f4ca7-2366-42e1-b9e7-387d02ad39b4 10011 127.0.0.1 10010 
+Dec 09 18:53:28.208 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SwR7 0 0 udp-7c0f4ca7-2366-42e1-b9e7-387d02ad39b4 
+Dec 09 18:53:28.225 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 18:53:28.259 HYPERVISOR: exec_cmd: nio create_udp udp-49f93d63-65b3-4552-8378-48356e44b9f2 10013 127.0.0.1 10012 
+Dec 09 18:53:28.304 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SwR7 2 0 udp-49f93d63-65b3-4552-8378-48356e44b9f2 
+Dec 09 18:53:28.336 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 18:53:28.454 HYPERVISOR: exec_cmd: nio create_udp udp-302c609e-3415-4fec-ab4b-11824e8f4d98 10022 127.0.0.1 10023 
+Dec 09 18:53:28.463 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SwR7 1 0 udp-302c609e-3415-4fec-ab4b-11824e8f4d98 
+Dec 09 18:53:28.480 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 18:53:28.535 HYPERVISOR: exec_cmd: nio create_udp udp-bd3bbc7a-6fed-4cac-9851-9332088a98c5 10024 127.0.0.1 10025 
+Dec 09 18:53:28.564 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SwR7 1 1 udp-bd3bbc7a-6fed-4cac-9851-9332088a98c5 
+Dec 09 18:53:28.573 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 19:12:07.009 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:12:17.060 HYPERVISOR: exec_cmd: vm set_ghost_status SwR7 2 
+Dec 09 19:12:17.062 HYPERVISOR: exec_cmd: vm set_ghost_file SwR7 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 09 19:12:17.063 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 19:12:17.064 HYPERVISOR: exec_cmd: vm start SwR7 
+Dec 09 19:17:12.550 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:23:41.546 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:36:49.166 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:49:48.755 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 19:49:48.780 HYPERVISOR: exec_cmd: vm stop SwR7 
+Dec 09 19:49:48.942 VM: VM SwR7 shutdown.
+Dec 09 19:49:48.975 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:49:53.073 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:50:07.927 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:54:03.973 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:54:26.719 HYPERVISOR: exec_cmd: vm get_status SwR7 
+Dec 09 19:54:26.750 HYPERVISOR: exec_cmd: vm extract_config SwR7 
+Dec 09 19:54:26.804 HYPERVISOR: exec_cmd: vm delete SwR7 
+Dec 09 19:54:26.804 VM: VM SwR7 destroyed.
+Dec 09 19:54:26.838 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 19:54:26.883 HYPERVISOR: Stopped.
+Dec 09 19:54:26.883 GENERAL: reset done.

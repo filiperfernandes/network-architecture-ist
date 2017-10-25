@@ -1,0 +1,46 @@
+Dec 09 18:30:46.126 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Dec 09 18:30:46.126 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56995.
+Dec 09 18:30:46.206 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 18:30:46.216 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Filipe/GNS3/projects/ProjARP1/project-files/dynamips 
+Dec 09 18:30:46.216 GENERAL: working_dir=/Users/Filipe/GNS3/projects/ProjARP1/project-files/dynamips
+Dec 09 18:30:46.223 HYPERVISOR: exec_cmd: vm create PC7-ios 13 c3725 
+Dec 09 18:30:46.223 VM: VM PC7-ios created.
+Dec 09 18:30:46.231 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC7-ios 5020 
+Dec 09 18:30:46.240 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC7-ios 
+Dec 09 18:30:46.248 HYPERVISOR: exec_cmd: vm get_status PC7-ios 
+Dec 09 18:30:46.259 HYPERVISOR: exec_cmd: vm set_idle_pc PC7-ios 0x60a69954 
+Dec 09 18:30:46.270 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC7-ios c20d.1282.0000 
+Dec 09 18:30:46.281 HYPERVISOR: exec_cmd: vm set_nvram PC7-ios 256 
+Dec 09 18:30:46.332 HYPERVISOR: exec_cmd: vm set_ios PC7-ios /Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 18:30:46.364 HYPERVISOR: exec_cmd: vm set_disk0 PC7-ios 0 
+Dec 09 18:30:46.379 HYPERVISOR: exec_cmd: vm set_config PC7-ios configs/i13_startup-config.cfg 
+Dec 09 18:32:05.228 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Dec 09 18:32:05.229 VM: VM Ghost created.
+Dec 09 18:32:05.239 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 18:32:05.253 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 09 18:32:05.258 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 09 18:32:05.261 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 09 18:32:05.277 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 09 18:32:05.804 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 09 18:32:05.810 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 09 18:32:06.287 VM: VM Ghost shutdown.
+Dec 09 18:32:06.301 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 09 18:32:06.303 VM: VM Ghost destroyed.
+Dec 09 18:32:06.325 HYPERVISOR: exec_cmd: vm set_ghost_status PC7-ios 2 
+Dec 09 18:32:06.338 HYPERVISOR: exec_cmd: vm set_ghost_file PC7-ios c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 09 18:32:06.345 HYPERVISOR: exec_cmd: vm get_status PC7-ios 
+Dec 09 18:32:06.361 HYPERVISOR: exec_cmd: vm start PC7-ios 
+Dec 09 18:46:50.880 HYPERVISOR: exec_cmd: vm get_status PC7-ios 
+Dec 09 18:46:50.901 HYPERVISOR: exec_cmd: vm stop PC7-ios 
+Dec 09 18:46:50.973 VM: VM PC7-ios shutdown.
+Dec 09 18:46:50.978 HYPERVISOR: exec_cmd: vm extract_config PC7-ios 
+Dec 09 18:46:55.141 HYPERVISOR: exec_cmd: vm extract_config PC7-ios 
+Dec 09 18:47:10.808 HYPERVISOR: exec_cmd: vm extract_config PC7-ios 
+Dec 09 18:47:58.346 HYPERVISOR: exec_cmd: vm extract_config PC7-ios 
+Dec 09 18:49:03.914 HYPERVISOR: exec_cmd: vm get_status PC7-ios 
+Dec 09 18:49:03.917 HYPERVISOR: exec_cmd: vm extract_config PC7-ios 
+Dec 09 18:49:03.921 HYPERVISOR: exec_cmd: vm delete PC7-ios 
+Dec 09 18:49:03.921 VM: VM PC7-ios destroyed.
+Dec 09 18:49:03.925 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 18:49:04.379 HYPERVISOR: Stopped.
+Dec 09 18:49:04.379 GENERAL: reset done.

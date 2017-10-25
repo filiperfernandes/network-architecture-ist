@@ -1,0 +1,34 @@
+Dec 09 18:30:46.068 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Dec 09 18:30:46.068 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56994.
+Dec 09 18:30:46.180 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 18:30:46.188 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Filipe/GNS3/projects/ProjARP1/project-files/dynamips 
+Dec 09 18:30:46.188 GENERAL: working_dir=/Users/Filipe/GNS3/projects/ProjARP1/project-files/dynamips
+Dec 09 18:30:46.198 HYPERVISOR: exec_cmd: vm create PC6-ios 9 c3725 
+Dec 09 18:30:46.198 VM: VM PC6-ios created.
+Dec 09 18:30:46.207 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC6-ios 5019 
+Dec 09 18:30:46.217 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC6-ios 
+Dec 09 18:30:46.224 HYPERVISOR: exec_cmd: vm get_status PC6-ios 
+Dec 09 18:30:46.232 HYPERVISOR: exec_cmd: vm set_idle_pc PC6-ios 0x60a69954 
+Dec 09 18:30:46.241 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC6-ios c209.1281.0000 
+Dec 09 18:30:46.249 HYPERVISOR: exec_cmd: vm set_nvram PC6-ios 256 
+Dec 09 18:30:46.260 HYPERVISOR: exec_cmd: vm set_ios PC6-ios /Users/Filipe/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 18:30:46.272 HYPERVISOR: exec_cmd: vm set_disk0 PC6-ios 0 
+Dec 09 18:30:46.283 HYPERVISOR: exec_cmd: vm set_config PC6-ios configs/i9_startup-config.cfg 
+Dec 09 18:32:06.394 HYPERVISOR: exec_cmd: vm set_ghost_status PC6-ios 2 
+Dec 09 18:32:06.407 HYPERVISOR: exec_cmd: vm set_ghost_file PC6-ios c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 09 18:32:06.420 HYPERVISOR: exec_cmd: vm get_status PC6-ios 
+Dec 09 18:32:06.424 HYPERVISOR: exec_cmd: vm start PC6-ios 
+Dec 09 18:46:50.900 HYPERVISOR: exec_cmd: vm get_status PC6-ios 
+Dec 09 18:46:50.922 HYPERVISOR: exec_cmd: vm stop PC6-ios 
+Dec 09 18:46:50.994 VM: VM PC6-ios shutdown.
+Dec 09 18:46:51.027 HYPERVISOR: exec_cmd: vm extract_config PC6-ios 
+Dec 09 18:46:55.128 HYPERVISOR: exec_cmd: vm extract_config PC6-ios 
+Dec 09 18:47:10.796 HYPERVISOR: exec_cmd: vm extract_config PC6-ios 
+Dec 09 18:47:58.326 HYPERVISOR: exec_cmd: vm extract_config PC6-ios 
+Dec 09 18:48:59.073 HYPERVISOR: exec_cmd: vm get_status PC6-ios 
+Dec 09 18:48:59.078 HYPERVISOR: exec_cmd: vm extract_config PC6-ios 
+Dec 09 18:48:59.084 HYPERVISOR: exec_cmd: vm delete PC6-ios 
+Dec 09 18:48:59.084 VM: VM PC6-ios destroyed.
+Dec 09 18:48:59.088 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 18:48:59.366 HYPERVISOR: Stopped.
+Dec 09 18:48:59.366 GENERAL: reset done.
